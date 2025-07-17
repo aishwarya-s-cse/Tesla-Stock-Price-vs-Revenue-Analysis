@@ -1,9 +1,0 @@
-!pip install yfinance
-import yfinance as yf
-# Create a ticker object for Tesla
-tesla = yf.Ticker("TSLA")
-# Get the stock data for Tesla with maximum history
-tesla_data = tesla.history(period="max")
-# Reset the index and display the first 5 rows
-tesla_data.reset_index(inplace=True)
-tesla_data.head()
